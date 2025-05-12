@@ -1,0 +1,11 @@
+replicaCount: 3
+
+image:
+  repository: your-dockerhub-username/flask-eks-demo
+  pullPolicy: Always
+  tag: latest
+
+service:
+  type: LoadBalancer
+  port: 80
+  targetPort: 5000
